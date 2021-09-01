@@ -1,5 +1,7 @@
 /** @format */
-import { Api_key } from "./Api.js";
+
+/** @format */
+import { Api_Key } from "./Api.js";
 const currencyInput = document.getElementById("currency-input");
 const currencyOutput = document.getElementById("currency-output");
 const amountInput = document.getElementById("amount-input");
@@ -19,9 +21,7 @@ function calculate() {
   const currencyInputVal = currencyInput.value;
   const currencyOutputVal = currencyOutput.value;
   const amountInputVal = amountInput.value;
-  fetch(
-    ` https://v6.exchangerate-api.com/v6/${Api_key}/latest/${currencyInputVal}`
-  )
+  fetch()` https://v6.exchangerate-api.com/v6/${Api_Key}/latest/${currencyInputVal}`
     .then((response) => response.json())
     .then((data) => {
       // console.log(data);
