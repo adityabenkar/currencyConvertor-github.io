@@ -21,7 +21,9 @@ function calculate() {
   const currencyInputVal = currencyInput.value;
   const currencyOutputVal = currencyOutput.value;
   const amountInputVal = amountInput.value;
-  fetch()` https://v6.exchangerate-api.com/v6/${Api_Key}/latest/${currencyInputVal}`
+  fetch(
+    ` https://v6.exchangerate-api.com/v6/${Api_Key}/latest/${currencyInputVal}`
+  )
     .then((response) => response.json())
     .then((data) => {
       // console.log(data);
