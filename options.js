@@ -1,6 +1,7 @@
 /** @format */
 
-import { fontAwesome_integrity } from "./Api.js";
+// import { fontAwesome_integrity } from "./Api.js";
+document.addEventListener("contextmenu", (event) => event.preventDefault());
 
 const select = document.querySelectorAll("select");
 const fontAwsome = document.getElementById("font-Awsome");
@@ -59,7 +60,7 @@ const currency = [
   "ZAR",
 ];
 
-fontAwsome.integrity = fontAwesome_integrity;
+// fontAwsome.integrity = fontAwesome_integrity;
 
 for (let i = 0; i < select.length; i++) {
   const sel = select[i];
