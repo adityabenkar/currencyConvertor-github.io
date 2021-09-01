@@ -1,6 +1,9 @@
 /** @format */
 
+import { fontAwesome_integrity } from "./Api.js";
+
 const select = document.querySelectorAll("select");
+const fontAwsome = document.getElementById("font-Awsome");
 const currency = [
   "AED",
   "ARS",
@@ -55,6 +58,8 @@ const currency = [
   "VND",
   "ZAR",
 ];
+
+fontAwsome.integrity = fontAwesome_integrity;
 
 for (let i = 0; i < select.length; i++) {
   const sel = select[i];
