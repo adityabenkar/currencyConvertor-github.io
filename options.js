@@ -1,6 +1,5 @@
 /** @format */
 
-// import { fontAwesome_integrity } from "./Api.js";
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 
 const select = document.querySelectorAll("select");
@@ -60,15 +59,11 @@ const currency = [
   "ZAR",
 ];
 
-// fontAwsome.integrity = fontAwesome_integrity;
-
-for (let i = 0; i < select.length; i++) {
-  const sel = select[i];
-  for (let j = 0; j < currency.length; j++) {
-    var opt = currency[j];
+select.forEach((sel) => {
+  currency.forEach((cur) => {
     const el = document.createElement("option");
-    el.textContent = opt;
-    el.value = opt;
+    el.textContent = cur;
+    el.value = cur;
     sel.appendChild(el);
-  }
-}
+  });
+});
