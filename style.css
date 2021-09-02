@@ -92,6 +92,7 @@ body {
   font-size: 1rem;
   color: lightgreen;
   margin: 0.3rem;
+  text-align: center;
 }
 
 #amount-output {
